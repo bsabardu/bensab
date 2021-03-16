@@ -1,15 +1,18 @@
 // == Import npm
 import React from 'react';
+import { Container, Header, Image } from 'semantic-ui-react'
 
 // == Import
 import landingImg from './velo.gif';
-import './styles.css';
+import './styles.scss';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <img src={landingImg} alt="react logo" />
-    <h1>J'arrive bientôt :)</h1>
+    <Container text>
+      <Image src={landingImg} centered size="medium" alt="Cycling guy gif" />
+      <Header as="h1" textAlign="center">J'arrive bientôt</Header>
+    </Container>
   </div>
 );
 
