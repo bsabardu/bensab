@@ -1,45 +1,23 @@
-const fs = require('fs');
-const http = require('http');
-const https = require('https');
 const express = require('express');
 const path = require('path');
 
 const app = express();
 
-// Certificate
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/chain.pem', 'utf8');
-
-// Handle https redirect
-app.use((req, res, next) => {
-  if (req.secure) {
-    // request was via https, so do no special handling
-    next();
-  }
-  else {
-    // request was via http, so redirect to https
-    res.redirect(`https://${req.headers.host}${req.url}`);
-  }
-});
+// // Handle https redirect
+// app.use((req, res, next) => {
+//   if (req.secure) {
+//     // request was via https, so do no special handling
+//     next();
+//   }
+//   else {
+//     // request was via http, so redirect to https
+//     res.redirect(`https://${req.headers.host}${req.url}`);
+//   }
+// });
 
 // add middlewares
 app.use(express.static(path.join(__dirname, 'build'), { dotfiles: 'allow' }));
 
-const credentials = {
-  key: privateKey,
-  cert: certificate,
-  ca: ca,
-};
-
-// Starting both http & https servers
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
-
-httpServer.listen(80, () => {
-  console.log('HTTP Server running on port 80');
-});
-
-httpsServer.listen(443, () => {
-  console.log('HTTPS Server running on port 443');
+app.listen(8080, () => {
+  console.log('HTTP Server running on port 8080');
 });
