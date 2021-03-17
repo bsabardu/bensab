@@ -26,7 +26,7 @@ app.use((req, res) => {
 
 // Starting both http & https servers
 const httpServer = http.createServer(app);
-// const httpsServer = https.createServer(credentials, app);
+const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(3000, () => {
   console.log('HTTP Server running on port 3000');
