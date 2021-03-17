@@ -1,4 +1,7 @@
 .app {
   margin: 0 auto;
-  padding: 5rem 0;
+
+  .main {
+    min-height: 100vh !important;
+  }
 }
