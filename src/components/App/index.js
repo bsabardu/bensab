@@ -11,7 +11,7 @@ const App = () => (
   <div className="app">
     <Container text>
       <Image src={landingImg} centered size="medium" alt="Cycling guy gif" />
-      <Header as="h1" textAlign="center">J'arrive bientôt</Header>
+      <Header as="h1" textAlign="center">J'arrive bientôt :)</Header>
     </Container>
   </div>
 );
