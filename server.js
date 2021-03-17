@@ -9,7 +9,7 @@ const app = express();
 // Certificate
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/yourdomain.com/chain.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/bensab.fr/chain.pem', 'utf8');
 
 // add middlewares
 app.use(express.static(path.join(__dirname, 'build'), { dotfiles: 'allow' }));
