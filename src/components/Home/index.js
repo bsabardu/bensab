@@ -13,7 +13,7 @@ const Home = () => (
   <div className="home" style={{ minHeight: 'calc( 100vh - 70px - 53px - 28px' }}>
     <Container className="title__wrapper" fluid textAlign="center">
       <h1 className="home__title">Benjamin Sabardu, Développeur Frontend</h1>
-      <h2 className="home__subtitle">Je réalise des projets tech, et j'aime ça. </h2>
+      <h2 className="home__subtitle">Je réalise des projets tech. E t j'aime ça. </h2>
       <Avatar
         avatarStyle="Circle"
         topType="ShortHairShortFlat"
@@ -36,7 +36,7 @@ const Home = () => (
         Je suis arrivé dans dans la tech dans un premier temps par des postes commerciaux / gestion de projets / product management. Mais passionné par les challenges techniques et souhaitant pour agir concrètement sur la réalisation de produits, je me suis récémment orienté vers le développement front-end. <br/>
         En près de 10 ans, j'ai travaillé en ESN, Agence web, Pureplayer e-commerce, Editeur SaaS, Startup... <br/>
         Mon parcours prouve ma capacité d'adaptation, ma polyvalence et mon sens analytique. <br/>
-        Sinon j'aime faire du sport (principalement vélo et course à pied) faire du théatre (impro) et des blagues.
+        Sinon j'aime faire du sport (principalement vélo et course à pied), du théatre (impro) et des blagues.
       </p>
       <Button primary size="huge" content="Voir mes projets" />
       <Button grey size="huge" content="Contact" />

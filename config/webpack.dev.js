@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   module: {
-    rules: [
+    rules: [      
       // Styles
       {
         test: /\.(s?css)$/,
