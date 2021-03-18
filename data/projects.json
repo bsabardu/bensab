@@ -1,90 +1,49 @@
 [{
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
+    "title": "ACDC Cyclisme",
+    "description": "Site vitrine d'un club de vélo",
+    "url": "http://acdc.bensab.fr",
+    "img": "../src/assets/img/projects/acdc.jpg",
+    "priority": 1,
     "tags": [
         {
-            "name":"Node",
-            "color":"red"
+            "name":"Node/Express",
+            "color":"green"
         },
         {
-            "name":"Express",
-            "color":"blue"
+            "name":"Vanilla JS",
+            "color":"yellow"
+        },
+        {
+            "name":"Tailwind",
+            "color":"teal"
         }
     ]
 },
 {
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
+    "title": "bensab.fr",
+    "description": "Portfolioception ! Une v1 de Mon propre porfolio réalisée en \"Quick and pretty\"",
+    "url": "https://bensab.fr",
+    "priority": 1,
     "tags": [
         {
-            "name":"Node",
-            "color":"red"
+            "name":"React",
+            "color":"blue"
         },
         {
-            "name":"Express",
-            "color":"blue"
+            "name":"Semantic UI",
+            "color":"grey"
         }
     ]
 },
 {
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
+    "title": "Yogana",
+    "description": "Site vitrine d'un professeur de Yoga : Design, Développement wordpress, déploiement",
+    "url": "http://yogana-yoga-chatou.fr",
+    "priority": 2,
     "tags": [
         {
-            "name":"Node",
-            "color":"red"
-        },
-        {
-            "name":"Express",
-            "color":"blue"
-        }
-    ]
-},
-{
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
-    "tags": [
-        {
-            "name":"Node",
-            "color":"red"
-        },
-        {
-            "name":"Express",
-            "color":"blue"
-        }
-    ]
-},
-{
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
-    "tags": [
-        {
-            "name":"Node",
-            "color":"red"
-        },
-        {
-            "name":"Express",
-            "color":"blue"
-        }
-    ]
-},
-{
-    "title": "ACDC-Cyclisme",
-    "description": "David",
-    "url": "http://acdc-cyclisme.fr",
-    "tags": [
-        {
-            "name":"Node",
-            "color":"red"
-        },
-        {
-            "name":"Express",
-            "color":"blue"
+            "name":"Wordpress",
+            "color":"black"
         }
     ]
 }
