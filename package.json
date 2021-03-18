@@ -49,6 +49,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.13",
     "avataaars": "^1.2.2",
     "core-js": "3",
     "express": "^4.17.1",
