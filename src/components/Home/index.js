@@ -3,6 +3,7 @@ import React from 'react';
 
 // == Import Components
 import { Button, Container, Header, Divider } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import Avatar from 'avataaars';
 
 // == Import
@@ -13,7 +14,7 @@ const Home = () => (
   <div className="home" style={{ minHeight: 'calc( 100vh - 70px - 53px - 28px' }}>
     <Container className="title__wrapper" fluid textAlign="center">
       <h1 className="home__title">Benjamin Sabardu, Développeur Frontend</h1>
-      <h2 className="home__subtitle">Je réalise des projets tech. E t j'aime ça. </h2>
+      <h2 className="home__subtitle">Je réalise des projets tech. Et j'aime ça. </h2>
       <Avatar
         avatarStyle="Circle"
         topType="ShortHairShortFlat"
@@ -38,7 +39,7 @@ const Home = () => (
         Mon parcours prouve ma capacité d'adaptation, ma polyvalence et mon sens analytique. <br/>
         Sinon j'aime faire du sport (principalement vélo et course à pied), du théatre (impro) et des blagues.
       </p>
-      <Button primary size="huge" content="Voir mes projets" />
+      <Link to="/projets"><Button primary size="huge" content="Voir mes projets" /></Link>
       <Button grey size="huge" content="Contact" />
     </Container>
   </div>

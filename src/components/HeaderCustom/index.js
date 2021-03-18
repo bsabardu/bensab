@@ -1,7 +1,7 @@
 // == Import npm
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Menu, Segment, Image } from 'semantic-ui-react';
+import { Container, Menu, Segment } from 'semantic-ui-react';
 
 // == Import
 import './styles.scss';
@@ -12,11 +12,10 @@ export default class HeaderCustom extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    console.log(this.state.activeItem);
     const { activeItem } = this.state;
 
     return (
-      <Segment style={{border: 0, boxShadow: 'none'}}>
+      <Segment style={{ border: 0, boxShadow: 'none' }}>
         <Container>
           <Menu pointing secondary>
             <Menu.Menu position="right">

@@ -5,10 +5,8 @@ import PropTypes from 'prop-types';
 // == Import Components
 import {
   Card,
-  Image,
   List,
   Label,
-  Icon,
 } from 'semantic-ui-react';
 
 // == Import
@@ -17,40 +15,34 @@ import './styles.scss';
 // Import Projets data
 
 // == Composant
+
 const Project = ({
   img,
   url,
   title,
   description,
   tags,
-}) => (
-  <Card>
-    <Image src={img} ui={false} />
-    <Card.Content textAlign="left">
-      <Card.Header>{title}
-        {url
-        && (
-          <a src={url}>
-            <Icon name="external alternate" />
-            Lien externe du projet
-          </a>
-        )}
-      </Card.Header>
-      <Card.Description>
-        {description}
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <List horizontal>
-        {tags.map((tag) => (
-          <List.Item>
-            <Label key={tag.name} color={tag.color}>{tag.name}</Label>
-          </List.Item>
-        ))}
-      </List>
-    </Card.Content>
-  </Card>
-);
+}) => {
+  const extra = (
+    <List horizontal>
+      {tags.map((tag) => (
+        <List.Item>
+          <Label key={tag.name} color={tag.color}>{tag.name}</Label>
+        </List.Item>
+      ))}
+    </List>
+  );
+
+  return (
+    <Card
+      image={img}
+      header={title}
+      href={url}
+      description={description}
+      extra={extra}
+    />
+  );
+};
 
 // On déclare le type de props attendu
 Project.propTypes = {

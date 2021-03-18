@@ -16,24 +16,27 @@ import './styles.scss';
 
 // == Composant
 const App = () => (
-  <Router>
-    <HeaderCustom />
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/projets" exact>
-        <Projects />
-      </Route>
-      <Route path="/apropos" exact>
-        <About />
-      </Route>
-      <Route path="/cv" exact>
-        <CV />
-      </Route>
-    </Switch>
-    <Footer />
-  </Router>
+  <div className="app">
+
+    <Router>
+      <HeaderCustom />
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/projets" exact>
+          <Projects />
+        </Route>
+        <Route path="/apropos" exact>
+          <About />
+        </Route>
+        <Route path="/cv" exact>
+          <CV />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
+  </div>
 );
 
 // == Export

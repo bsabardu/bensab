@@ -15,14 +15,12 @@ import projectsData from '../../../data/projects.json';
 // == Composant
 const Projects = () => (
   <Container textAlign="center">
-    <Header as="h1" textAlign="center" inverted>Projects</Header>
-    <Segment inverted>
-      <Card.Group itemsPerRow={3} stackable doubling>
-        {projectsData.map((project) => (
-          <Project key={project.name} {...project} />
-        ))}
-      </Card.Group>
-    </Segment>
+    <Header as="h1" textAlign="center">Mes projets</Header>
+    <Card.Group itemsPerRow={3} stackable doubling>
+      {projectsData.map((project) => (
+        <Project key={project.name} {...project} />
+      ))}
+    </Card.Group>
   </Container>
 );
 
