@@ -25,21 +25,22 @@ const Project = ({
   tags,
 }) => (
   <Card>
-    <Image src={img} centered ui={false} />
-    <Card.Content>
-      <Card.Header>{title}</Card.Header>
+    <Image src={img} ui={false} />
+    <Card.Content textAlign="left">
+      <Card.Header>{title}
+        {url
+        && (
+          <a src={url}>
+            <Icon name="external alternate" />
+            Lien externe du projet
+          </a>
+        )}
+      </Card.Header>
       <Card.Description>
         {description}
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      {url
-      && (
-        <a src={url}>
-          <Icon name="external alternate" />
-          Lien externe du projet
-        </a>
-      )}
       <List horizontal>
         {tags.map((tag) => (
           <List.Item>

@@ -2,31 +2,46 @@
 import React from 'react';
 
 // == Import Components
-import { Container, Header } from 'semantic-ui-react';
+import { Button, Container, Header, Divider } from 'semantic-ui-react';
+import Avatar from 'avataaars';
 
 // == Import
 import './styles.scss';
 
 // == Composant
 const Home = () => (
-  <Container text>
-    <Header as="h1" textAlign="center" inverted>Benjamin Sabardu</Header>
-    <Header as="h2" textAlign="center" inverted>Développeur Frontend</Header>
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-      ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-      magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-      ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-      quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-      arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-      Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras
-      dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-      Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-      Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-      viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-      Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-    </p>
-  </Container>
+  <div className="home" style={{ minHeight: 'calc( 100vh - 70px - 53px - 28px' }}>
+    <Container className="title__wrapper" fluid textAlign="center">
+      <h1 className="home__title">Benjamin Sabardu, Développeur Frontend</h1>
+      <h2 className="home__subtitle">Je réalise des projets tech, et j'aime ça. </h2>
+      <Avatar
+        avatarStyle="Circle"
+        topType="ShortHairShortFlat"
+        accessoriesType="Round"
+        hairColor="BrownDark"
+        facialHairType="BeardLight"
+        facialHairColor="BrownDark"
+        clotheType="ShirtCrewNeck"
+        clotheColor="Blue03"
+        eyeType="Happy"
+        eyebrowType="RaisedExcitedNatural"
+        mouthType="Smile"
+        skinColor="Light"
+      />
+    </Container>
+    <Container text textAlign="center">
+      <Divider />
+      <h3 className="home__intro"> Bonjour ! Je suis Benjamin, enchanté</h3>
+      <p className="home__content">
+        Je suis arrivé dans dans la tech dans un premier temps par des postes commerciaux / gestion de projets / product management. Mais passionné par les challenges techniques et souhaitant pour agir concrètement sur la réalisation de produits, je me suis récémment orienté vers le développement front-end. <br/>
+        En près de 10 ans, j'ai travaillé en ESN, Agence web, Pureplayer e-commerce, Editeur SaaS, Startup... <br/>
+        Mon parcours prouve ma capacité d'adaptation, ma polyvalence et mon sens analytique. <br/>
+        Sinon j'aime faire du sport (principalement vélo et course à pied) faire du théatre (impro) et des blagues.
+      </p>
+      <Button primary size="huge" content="Voir mes projets" />
+      <Button grey size="huge" content="Contact" />
+    </Container>
+  </div>
 );
 
 // == Export

@@ -18,38 +18,22 @@ import './styles.scss';
 // == Composant
 const App = () => (
   <Router>
-    <Segment size="massive" inverted style={{ height: '100vh' }}>
-      <Container>
-        <Grid>
-          <Grid.Column stretched>
-            <Grid.Row>
-              <HeaderCustom />
-            </Grid.Row>
-            <Grid.Row stretched>
-
-              <Switch>
-                <Route path="/" exact>
-                  <Home />
-                </Route>
-                <Route path="/projets" exact>
-                  <Projects />
-                </Route>
-                <Route path="/apropos" exact>
-                  <About />
-                </Route>
-                <Route path="/cv" exact>
-                  <CV />
-                </Route>
-              </Switch>
-
-            </Grid.Row>
-            <Grid.Row>
-              <Footer />
-            </Grid.Row>
-          </Grid.Column>
-        </Grid>
-      </Container>
-    </Segment>
+    <HeaderCustom />
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/projets" exact>
+        <Projects />
+      </Route>
+      <Route path="/apropos" exact>
+        <About />
+      </Route>
+      <Route path="/cv" exact>
+        <CV />
+      </Route>
+    </Switch>
+    <Footer />
   </Router>
 );
 
