@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // == Import Components
-import { Container, Grid, Segment } from 'semantic-ui-react';
 import HeaderCustom from 'src/components/HeaderCustom';
 import Footer from 'src/components/Footer';
 

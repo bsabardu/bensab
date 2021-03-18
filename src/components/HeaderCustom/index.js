@@ -7,11 +7,12 @@ import { Container, Menu, Segment, Image } from 'semantic-ui-react';
 import './styles.scss';
 
 export default class HeaderCustom extends Component {
-  state = { activeItem: 'accueil' }
+  state = { activeItem: window.location.pathname.slice(1) }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+    console.log(this.state.activeItem);
     const { activeItem } = this.state;
 
     return (
@@ -22,7 +23,7 @@ export default class HeaderCustom extends Component {
               <Link to="/">
                 <Menu.Item
                   name="accueil"
-                  active={activeItem === 'accueil'}
+                  active={activeItem === 'accueil' || activeItem === ''}
                   onClick={this.handleItemClick}
                 />
               </Link>
@@ -36,14 +37,14 @@ export default class HeaderCustom extends Component {
               <Link to="/apropos">
                 <Menu.Item
                   name="A propos"
-                  active={activeItem === 'A propos'}
+                  active={activeItem === 'A propos' || activeItem === 'apropos'}
                   onClick={this.handleItemClick}
                 />
               </Link>
               <Link to="/cv">
                 <Menu.Item
                   name="CV"
-                  active={activeItem === 'CV'}
+                  active={activeItem === 'CV' || activeItem === 'cv'}
                   onClick={this.handleItemClick}
                 />
               </Link>
