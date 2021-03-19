@@ -3,7 +3,8 @@
 import React from 'react';
 
 // == Import Components
-import { Container, Header, Image, Grid, Divider, Button } from 'semantic-ui-react';
+import { Container, Header, Image, Grid, Divider } from 'semantic-ui-react';
+import ButtonMailto from 'src/components/ButtonMailto';
 
 // == Import
 import './styles.scss';
@@ -62,7 +63,7 @@ const About = () => (
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Button primary size="big" content="Contactez-moi" />
+        <ButtonMailto primary size="big" content="Contactez-moi" mailto="mailto:bsabardu@gmail.com" />
       </Grid.Row>
     </Grid>
   </Container>

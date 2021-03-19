@@ -11,6 +11,9 @@ import Projects from 'src/components/Projects';
 import About from 'src/components/About';
 import CV from 'src/components/CV';
 
+// == Import Hook Component
+import ScrollToTop from 'src/hooks/ScrollToTop';
+
 // == Import
 import './styles.scss';
 
@@ -19,6 +22,7 @@ const App = () => (
   <div className="app">
 
     <Router>
+      <ScrollToTop />
       <HeaderCustom />
       <Switch>
         <Route path="/" exact>

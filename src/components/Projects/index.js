@@ -3,7 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import Components
-import { Container, Header, Card, Button, Divider } from 'semantic-ui-react';
+import { Container, Header, Card, Divider } from 'semantic-ui-react';
+import ButtonMailto from 'src/components/ButtonMailto';
 import Project from './Project';
 
 // == Import
@@ -26,7 +27,8 @@ const Projects = () => (
     <Divider hidden />
     <Container textAlign="center">
       <Header as="h3" content="Et bientôt le votre ?..." />
-      <Button primary content="Me contacter" />
+      <ButtonMailto primary size="big" content="Contactez-moi" mailto="mailto:bsabardu@gmail.com" />
+
 
     </Container>
   </Container>
