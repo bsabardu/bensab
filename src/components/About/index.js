@@ -19,6 +19,7 @@ import impro from '../../assets/img/impro.jpg';
 const About = () => (
   <Container style={{ minHeight: 'calc( 100vh - 70px - 53px - 28px' }}>
     <Header as="h1" textAlign="center">A propos</Header>
+    <Divider hidden />
     <Grid columns={2}>
       <Grid.Row>
         <Grid.Column width={4} verticalAlign="middle">

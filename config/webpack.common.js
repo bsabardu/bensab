@@ -74,6 +74,17 @@ module.exports = {
           },
         ],
       },
+
+      // Pdf
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { outputPath: 'pdf/' },
+          },
+        ],
+      },
     ],
   },
 };

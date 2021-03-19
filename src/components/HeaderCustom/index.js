@@ -1,10 +1,12 @@
 // == Import npm
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Menu, Segment } from 'semantic-ui-react';
+import { Button, Container, Menu, Segment } from 'semantic-ui-react';
 
 // == Import
 import './styles.scss';
+
+// == Import PDF
 
 export default class HeaderCustom extends Component {
   state = { activeItem: window.location.pathname.slice(1) }
@@ -40,13 +42,11 @@ export default class HeaderCustom extends Component {
                   onClick={this.handleItemClick}
                 />
               </Link>
-              <Link to="/cv">
-                <Menu.Item
-                  name="CV"
-                  active={activeItem === 'CV' || activeItem === 'cv'}
-                  onClick={this.handleItemClick}
-                />
-              </Link>
+              <a href="/cv_BenjaminSabardu_devFront.pdf" download>
+                <Menu.Item size="mini">
+                  <Button size="mini" secondary content="CV" only="mobile" />
+                </Menu.Item>
+              </a>
             </Menu.Menu>
           </Menu>
         </Container>

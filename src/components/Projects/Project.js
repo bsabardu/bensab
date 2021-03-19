@@ -44,6 +44,7 @@ const Project = ({
       extra={extra}
       raised
       link
+      fluid
     />
   );
 };

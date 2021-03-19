@@ -79,6 +79,20 @@ const projects = [{
     },
   ],
 },
+{
+  title: 'Converter',
+  description: 'Basic Converter in React with local data',
+  url: 'https://converter-green.vercel.app/',
+  priority: 2,
+  img: 'converter',
+  tags: [
+    {
+      name: 'React',
+      color: 'blue',
+    },
+  ],
+},
+
 ];
 
 export default projects;

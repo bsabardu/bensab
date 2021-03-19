@@ -19,6 +19,7 @@ import projectsData from '../../../data/projects';
 const Projects = () => (
   <Container>
     <Header as="h1" textAlign="center">Mes projets</Header>
+    <Divider hidden />
     <Card.Group itemsPerRow={3} stackable doubling>
       {projectsData.map((project) => (
         <Project key={project.name} {...project} />
