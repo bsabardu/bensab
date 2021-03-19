@@ -35,7 +35,7 @@ const Project = ({
 
   return (
     <Card
-      image={img}
+      image={`/img/projects/${img}.jpg`}
       header={title}
       href={url}
       description={description}
