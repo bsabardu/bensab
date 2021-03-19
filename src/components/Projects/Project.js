@@ -38,8 +38,12 @@ const Project = ({
       image={`/img/projects/${img}.jpg`}
       header={title}
       href={url}
+      target="_blank"
+      rel="noreferrer"
       description={description}
       extra={extra}
+      raised
+      link
     />
   );
 };

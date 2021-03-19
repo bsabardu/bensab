@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import Components
-import { Container, Header, Segment, Card, Button, Divider } from 'semantic-ui-react';
+import { Container, Header, Card, Button, Divider } from 'semantic-ui-react';
 import Project from './Project';
 
 // == Import

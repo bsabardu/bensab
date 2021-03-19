@@ -1,8 +1,15 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 // == Import npm
 import React from 'react';
 
 // == Import Components
-import { Container, Grid, Segment, List, Icon } from 'semantic-ui-react';
+import {
+  Container,
+  Grid,
+  Segment,
+  List,
+  Icon,
+} from 'semantic-ui-react';
 
 // == Import
 import './styles.scss';
@@ -15,13 +22,13 @@ const Footer = () => (
         <Grid.Row>
           <List horizontal link>
             <List.Item>
-              <Icon size="big" name="linkedin" />
+              <a href="https://www.linkedin.com/in/benjaminsabardu/" target="_blank" rel="noreferrer"><Icon size="big" name="linkedin" /></a>
             </List.Item>
             <List.Item>
-              <Icon size="big" name="github" />
+              <a href="https://github.com/bsabardu" target="_blank" rel="noreferrer"><Icon size="big" name="github" /></a>
             </List.Item>
             <List.Item>
-              <Icon size="big" name="twitter" />
+              <a href="https://twitter.com/bsabardu" target="_blank" rel="noreferrer"><Icon size="big" name="twitter" /></a>
             </List.Item>
           </List>
         </Grid.Row>
