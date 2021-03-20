@@ -1,9 +1,12 @@
 /* eslint-disable max-len */
 // == Import npm
 import React from 'react';
+import { createMedia } from "@artsy/fresnel"
 
 // == Import Components
-import { Container, Header, Image, Grid, Divider } from 'semantic-ui-react';
+import {
+  Container, Header, Image, Grid, Divider,
+} from 'semantic-ui-react';
 import ButtonMailto from 'src/components/ButtonMailto';
 
 // == Import
@@ -20,10 +23,10 @@ const About = () => (
   <Container style={{ minHeight: 'calc( 100vh - 70px - 53px - 28px' }}>
     <Header as="h1" textAlign="center">A propos</Header>
     <Divider hidden />
-    <Grid columns={2}>
+    <Grid stackable columns={2}>
       <Grid.Row>
-        <Grid.Column width={4} verticalAlign="middle">
-          <Image size="medium" src={ben} />
+        <Grid.Column width={4} reversed verticalAlign="middle" textAlign="center">
+          <Image size="middle" src={ben} />
         </Grid.Column>
         <Grid.Column width={12}>
           <Container text>
@@ -51,7 +54,7 @@ const About = () => (
         </Grid.Column>
       </Grid.Row>
     </Grid>
-    <Grid relaxed centered columns={3}>
+    <Grid relaxed centered stackable columns={3}>
       <Grid.Row>
         <Grid.Column>
           <Image src={impro} alt="Photographie d'un match d'improvisation théatrale" />

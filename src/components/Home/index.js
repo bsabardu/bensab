@@ -34,9 +34,9 @@ const Home = () => (
       <Divider />
       <h3 className="home__intro"> Bonjour ! Je suis Benjamin, enchanté</h3>
       <p className="home__content">
-        Je suis arrivé dans dans la tech dans un premier temps par des postes commerciaux / gestion de projets / product management. Mais passionné par les challenges techniques et souhaitant pour agir concrètement sur la réalisation de produits, je me suis récémment orienté vers le développement front-end. <br/>
+        Je suis arrivé dans la tech dans un premier temps par des postes commerciaux / gestion de projets / product management. Mais passionné par les challenges techniques et souhaitant pour agir concrètement sur la réalisation de produits, je me suis récemment orienté vers le développement front-end. <br/>
         En près de 10 ans, j'ai travaillé en ESN, Agence web, Pureplayer e-commerce, Editeur SaaS, Startup... <br/>
-        Mon parcours prouve ma capacité d'adaptation, ma polyvalence et mon sens analytique. <br/>
+        Mon parcours prouve ma capacité d'adaptation, ma polyvalence et ma capacité d'analyse. <br/>
         Sinon j'aime faire du sport (principalement vélo et course à pied), du théatre (impro) et des blagues.
       </p>
       <Link to="/projets"><Button primary size="huge" content="Voir mes projets" /></Link>
